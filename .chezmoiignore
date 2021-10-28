@@ -1,0 +1,5 @@
+.github/
+.oh-my-zsh/cache/.zsh-update
+install.sh
+LICENSE
+README.md
