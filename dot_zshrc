@@ -175,8 +175,8 @@ if command -v thefuck &> /dev/null; then
 fi
 
 # Auto Start Tmux
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  if [[ ! -z "$VSCODE" ]]; then
+if [[ ! "$TERM_PROGRAM" == "tmux" ]] && command -v tmux &> /dev/null; then
+  if [[ $TERM_PROGRAM == "vscode" ]]; then
     SESSION="vscode-`pwd | md5 | cut -c -9`"
   else
     SESSION='default'
