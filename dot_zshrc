@@ -111,7 +111,7 @@ if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
-export EDITOR="code -rw"
+export EDITOR="nvim"
 
 #########################################
 # Migrated from `.bash_profile`         #
@@ -144,9 +144,6 @@ fi
 
 # Aliases
 alias grep='rg'
-alias create-react-app='npx create-react-app'
-alias gatsby='npx gatsby'
-alias sanity='npx sanity'
 
 # fzf config
 # --height
